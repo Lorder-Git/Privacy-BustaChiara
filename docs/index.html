@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Informativa sulla Privacy — BustaChiara</title>
+<style>
+  :root {
+    --accent: #0f6b5c;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --bg: #ffffff;
+    --panel: #f7f9f8;
+    --border: #e5e7eb;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: 1.7rem; margin-bottom: 4px; }
+  .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
+  .summary {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
+    padding: 20px 24px; margin-bottom: 36px;
+  }
+  .attenzione {
+    background: #fff7ed; border: 1px solid #fdba74; color: #7c2d12;
+    padding: 12px 16px; border-radius: 8px; margin: 16px 0;
+  }
+  h2 {
+    font-size: 1.25rem; margin-top: 44px; margin-bottom: 12px;
+    border-bottom: 2px solid var(--accent); padding-bottom: 6px;
+  }
+  h3 { font-size: 1.05rem; margin-top: 24px; margin-bottom: 8px; color: var(--accent); }
+  ul, ol { padding-left: 22px; }
+  li { margin-bottom: 4px; }
+  .tab { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.95rem; }
+  th, td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; vertical-align: top; }
+  th { background: var(--panel); }
+  code { overflow-wrap: anywhere; }
+  a { color: var(--accent); }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.85rem; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Informativa sulla privacy — BustaChiara</h1>
+  <div class="meta">Ultimo aggiornamento: 26/10/2026 &nbsp;·&nbsp; Versione: 1.0 (app BustaChiara 1.0.0)</div>
+
+  <div class="summary">
+    <strong>In breve.</strong>
+    <ul>
+      <li>Non c'è registrazione e non c'è un account. Niente pubblicità, niente statistiche, niente profilazione.</li>
+      <li><strong>Il PDF e la foto della busta paga non lasciano mai il telefono.</strong> L'app ne legge il testo sul telefono.</li>
+      <li>Prima di inviare qualcosa, l'app <strong>oscura sul telefono</strong> i tuoi dati anagrafici e quelli dell'azienda (nome, codice fiscale, indirizzo, data di nascita, IBAN, matricola, email, telefoni, partita IVA e posizioni INPS e INAIL dell'azienda) e le parole che scegli tu. Con l'opzione <strong>Oscura le voci delicate</strong>, attiva in partenza, nasconde anche il nome delle voci su sindacato, salute, legge 104, congedi, cessione del quinto e pignoramenti. Ti mostra il testo che parte e puoi annullare.</li>
+      <li>Il testo oscurato passa dal nostro sito marketplace-apps.com all'intelligenza artificiale di Cloudflare, che lo analizza e <strong>non lo conserva né lo usa per addestrare</strong> i modelli. Anche il nostro sito non lo salva.</li>
+      <li>Una busta paga può rivelare dati delicati (iscrizione al sindacato, malattia, permessi per la legge 104, maternità, cessione del quinto, pignoramenti). Per questo l'analisi parte <strong>solo con il tuo consenso esplicito</strong>, che puoi ritirare quando vuoi (punto 2.5).</li>
+      <li>Le buste analizzate restano <strong>solo sul telefono</strong>, finché non le cancelli.</li>
+      <li>Per contare le analisi del mese il server salva solo un'impronta del telefono (non il tuo nome, non il testo, non l'indirizzo IP) e la cancella 30 giorni dopo la fine del mese (punto 2.6).</li>
+    </ul>
+  </div>
+
+  <h2>1. Titolare del trattamento</h2>
+  <p>
+    Hubert Montero / Sviluppatore indipendente / BustaChiara<br />
+    Email: <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>
+  </p>
+  <p>Per qualsiasi questione relativa ai tuoi dati puoi scrivere all'indirizzo qui sopra. Non è stato nominato un responsabile della protezione dei dati (DPO).</p>
+
+  <h2>2. Quali dati tratta l'app</h2>
+
+  <h3>2.1 La busta paga che carichi</h3>
+  <p>
+    Puoi scegliere un <strong>PDF</strong> del cedolino oppure, solo nell'app Android, una <strong>foto</strong>. L'app non chiede il permesso della fotocamera: la foto la scegli dalla galleria o la scatti con l'app fotocamera del telefono, che passa a BustaChiara solo quella foto.
+  </p>
+  <ul>
+    <li>Del PDF l'app legge il testo sul telefono. Il file non viene inviato a nessuno.</li>
+    <li>Della foto l'app legge il testo sul telefono con il riconoscimento del testo di Google ML Kit, che funziona sul dispositivo. Poi <strong>cancella la copia temporanea della foto</strong>. La foto non viene inviata a nessuno, né a noi né a Google.</li>
+  </ul>
+  <p>
+    ML Kit, per funzionare, invia a Google dati tecnici di diagnostica: modello e sistema operativo del telefono, nome e versione dell'app, tempi di elaborazione, formato e dimensione dell'immagine, un identificativo dell'installazione. Google dichiara che questi dati non contengono l'immagine e non vengono passati a terzi (<a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener">pagina di Google su ML Kit</a>). Se usi solo i PDF, ML Kit non viene usato.
+  </p>
+
+  <h3>2.2 Oscuramento sul telefono</h3>
+  <p>Prima di qualsiasi invio, l'app cerca nel testo e sostituisce con un segnaposto (per esempio <code>[CODICE FISCALE]</code>):</p>
+  <ul>
+    <li>l'<strong>intestazione anagrafica</strong>: le righe con nome, codice fiscale, indirizzo, data di nascita e IBAN, e la riga dei valori sotto di esse;</li>
+    <li>la <strong>data di nascita</strong>, ovunque compaia;</li>
+    <li><strong>indirizzi e CAP</strong>;</li>
+    <li>il <strong>codice fiscale</strong>, l'<strong>IBAN</strong> e la <strong>matricola</strong>;</li>
+    <li>il codice fiscale o la <strong>partita IVA dell'azienda</strong> e le sue <strong>posizioni INPS e INAIL</strong>;</li>
+    <li>indirizzi <strong>email</strong> e numeri di <strong>telefono</strong>;</li>
+    <li>le <strong>parole da oscurare sempre</strong> che imposti tu, per esempio il tuo nome e cognome o il nome dell'azienda. Queste parole restano salvate solo sul telefono.</li>
+  </ul>
+  <p>
+    <strong>Oscura le voci delicate</strong> (opzione attiva in partenza, puoi spegnerla nelle Impostazioni): l'app riconosce sul telefono le voci che riguardano sindacato, malattia o ricovero, legge 104, maternità, paternità e congedi, cessione del quinto, pignoramenti e deleghe, e ne sostituisce la descrizione con un'etichetta neutra (per esempio <code>[VOCE DELICATA 1]</code>). Gli importi restano, perché servono ai conti; la spiegazione di quelle voci te la dà il glossario dell'app, sul telefono.
+  </p>
+  <p>
+    Poi ti mostra <strong>l'anteprima del testo che verrà inviato</strong>, con le parti oscurate evidenziate. Se qualcosa non ti convince puoi aggiungere parole da oscurare o annullare: senza la tua conferma non parte niente.
+  </p>
+  <div class="attenzione">
+    <strong>L'oscuramento automatico può non riconoscere tutto</strong>, per esempio un indirizzo, una data di nascita o un nome scritto in modo insolito. Controlla sempre l'anteprima prima di confermare.
+  </div>
+
+  <h3>2.3 Cosa può restare nel testo</h3>
+  <p>
+    Anche dopo l'oscuramento il testo contiene le voci e gli importi della busta, che servono per l'analisi. Se spegni l'opzione <strong>Oscura le voci delicate</strong>, o se l'app non riconosce una voce, alcune voci possono rivelare <strong>dati personali particolari</strong> (art. 9 del Regolamento UE 2016/679, GDPR), per esempio:
+  </p>
+  <ul>
+    <li>una <strong>trattenuta sindacale</strong>, che rivela l'iscrizione a un sindacato;</li>
+    <li>giorni di <strong>malattia</strong>, infortunio o ricovero, che riguardano la salute;</li>
+    <li>permessi per la <strong>legge 104</strong>, che possono riguardare la tua salute o quella di un familiare;</li>
+    <li>congedi di <strong>maternità</strong> o paternità;</li>
+    <li>una <strong>cessione del quinto</strong> o un <strong>pignoramento</strong>, che riguardano la tua situazione economica.</li>
+  </ul>
+  <p>
+    Anche con l'opzione attiva, importi, giorni e ore restano visibili e possono far intuire qualcosa. Possono comparire anche informazioni su familiari, come le detrazioni per familiari a carico. Per questo l'analisi parte solo con il tuo consenso esplicito (punto 2.5).
+  </p>
+
+  <h3>2.4 Analisi con l'intelligenza artificiale</h3>
+  <ol>
+    <li><strong>Il testo oscurato va al nostro sito.</strong> L'app invia il solo testo oscurato (al massimo 30.000 caratteri), il numero di pagine e se viene da un PDF o da una foto a <code>marketplace-apps.com/api/bustachiara/analizza</code>. L'app invia sempre l'impronta del telefono descritta al punto 2.6. Con Premium invia anche il token di attivazione del piano: contiene l'indirizzo email dell'acquirente, il piano e le date di scadenza ed è firmato dal nostro server delle licenze. Il sito lo usa solo per verificare il piano e non lo salva.</li>
+    <li><strong>L'intelligenza artificiale lo legge.</strong> Il sito passa il testo a <strong>Cloudflare Workers AI</strong>, che risponde con le voci, i totali e una breve sintesi in formato strutturato. Cloudflare dichiara che per le normali richieste a Workers AI non conserva il testo né la risposta dopo aver dato la risposta e che <strong>non li usa per addestrare modelli di intelligenza artificiale</strong> (<a href="https://developers.cloudflare.com/workers-ai/platform/privacy/" target="_blank" rel="noopener">pagina privacy di Workers AI</a>). Cloudflare conserva solo dati tecnici (per esempio orario, modello usato, dimensione della richiesta), senza il contenuto.</li>
+    <li><strong>Nessuna copia sul server.</strong> Il nostro sito non salva il testo né la risposta: li inoltra e restituisce il risultato all'app. I fornitori dell'infrastruttura (Vercel e Cloudflare) possono tenere per breve tempo registri tecnici delle richieste (indirizzo IP, orario, esito), senza il testo.</li>
+    <li><strong>I conti li fa l'app.</strong> I controlli (per esempio se il netto torna con competenze e trattenute) e il glossario delle voci sono calcolati sul telefono, non dall'intelligenza artificiale. Le spiegazioni scritte dall'intelligenza artificiale, per le voci che il glossario non conosce, sono marcate come <em>spiegazione automatica</em>.</li>
+  </ol>
+  <p>L'intelligenza artificiale può sbagliare a leggere una voce o un importo: confronta sempre il risultato con il cedolino.</p>
+
+  <h3>2.5 Il tuo consenso</h3>
+  <p>
+    La prima volta che avvii un'analisi l'app ti mostra una schermata che spiega cosa viene inviato e ti chiede il <strong>consenso esplicito</strong>, con una casella da spuntare (non spuntata in partenza) e il pulsante di conferma. Senza consenso l'analisi non parte; puoi comunque tenere l'app e il suo glossario.
+  </p>
+  <p>
+    Puoi <strong>ritirare il consenso in qualsiasi momento</strong> dalle Impostazioni: da quel momento l'app non invia più nulla. Il ritiro non rende illecite le analisi già fatte (art. 7, par. 3, GDPR) e non cancella le buste già salvate sul telefono, che puoi eliminare tu.
+  </p>
+
+  <h3>2.6 Conteggio dell'analisi gratuita</h3>
+  <p>
+    Il piano gratuito comprende 1 analisi al mese e Premium fino a 30. Per farli rispettare l'app invia, a ogni analisi, un'<strong>impronta del telefono</strong>: un codice ricavato con una funzione di hash (SHA-256) dal nome dell'app e dall'identificativo Android (ANDROID_ID), poi accorciato. <strong>L'identificativo Android non viene mai inviato in chiaro</strong> e l'impronta è diversa per ogni app. Nella versione web, al posto dell'impronta, l'app usa un codice casuale salvato nel browser. Con Premium il server controlla anche che l'impronta coincida con il telefono indicato nel token di attivazione.
+  </p>
+  <p>
+    Per contare le analisi il server salva solo un'impronta di quel codice (un hash con una chiave segreta), il mese e il numero di analisi fatte. Non salva il testo, il risultato, il token né il tuo indirizzo IP. Questi conteggi si cancellano <strong>30 giorni dopo la fine del mese</strong> a cui si riferiscono.
+  </p>
+
+  <h3>2.7 Archivio delle buste sul telefono</h3>
+  <p>
+    Le buste analizzate vengono salvate nella memoria privata dell'app, in un database che solo BustaChiara può leggere: mese e anno, un'etichetta facoltativa che scrivi tu (per esempio il nome del datore), il nome del file, le voci con gli importi, i totali, contributi, fisco, ferie e permessi, TFR, il risultato dell'analisi e le spiegazioni. Il PDF e la foto non vengono salvati.
+  </p>
+  <p>Nelle impostazioni restano anche le parole da oscurare, la scelta sul consenso e il numero di analisi del mese.</p>
+  <p><strong>Questi dati non vengono trasmessi a nessuno.</strong> Non possiamo leggerli e non possiamo recuperarli se li perdi.</p>
+
+  <h3>2.8 Confronto, storico ed esportazione (Premium)</h3>
+  <p>
+    Il confronto tra due mesi e lo storico dell'anno sono calcolati sul telefono con le buste che hai già salvato: non parte nessuna nuova richiesta. Il riepilogo in PDF viene creato sul telefono; se lo condividi, lo fai tu con l'app che scegli.
+  </p>
+
+  <h3>2.9 Attivazione di Premium sul telefono</h3>
+  <p>La chiave Premium vale al massimo su <strong>2 telefoni</strong>. Per far rispettare questo limite, quando attivi la chiave l'app si collega al nostro server delle licenze (<code>licenze.hubertmontero8514.workers.dev</code>, un servizio Cloudflare Workers gestito da noi) e invia:</p>
+  <ul>
+    <li>la <strong>chiave di licenza</strong>, che al suo interno contiene l'indirizzo email dell'acquirente, il piano e la data di scadenza;</li>
+    <li>l'<strong>impronta del telefono</strong> descritta al punto 2.6.</li>
+  </ul>
+  <p>La stessa richiesta viene ripetuta in automatico quando l'attivazione va rinnovata, al massimo ogni 30 giorni e solo se il telefono è connesso. Il server risponde con un'attivazione firmata che l'app verifica sul telefono, anche senza connessione.</p>
+  <p>Il server delle licenze <strong>non conserva la tua email</strong> né la chiave in chiaro. Conserva soltanto: l'hash SHA-256 della chiave; l'impronta del telefono; il piano (per esempio se si tratta della prova); la data di attivazione e quella dell'ultimo rinnovo; se cambi telefono, la data dell'ultima sostituzione automatica (una ogni 30 giorni); se una chiave viene bloccata (per esempio dopo un rimborso o un abuso), l'hash di quella chiave. La prova si può attivare una sola volta per telefono. Il pulsante <strong>Disattiva su questo telefono</strong>, nella schermata Premium, cancella dal server la riga di quel telefono.</p>
+  <p>L'identificativo Android si legge solo per l'attivazione di Premium e per il conteggio delle analisi, mai per pubblicità o statistiche.</p>
+
+  <h3>2.10 Aggiornamenti dell'app</h3>
+  <p>All'avvio e dalle impostazioni l'app chiede a <code>marketplace-apps.com/api/versione/bustachiara</code> qual è l'ultima versione e, se ce n'è una nuova, scarica il pacchetto da <code>files.marketplace-apps.com</code> (Cloudflare R2). Sei tu a confermare l'installazione. Queste richieste non contengono dati delle tue buste: il server vede solo l'indirizzo IP.</p>
+
+  <h3>2.11 Versione web</h3>
+  <p>BustaChiara si può usare anche dal browser, dalle pagine di marketplace-apps.com. Nella versione web:</p>
+  <ul>
+    <li>si possono caricare solo PDF (niente foto); il testo viene letto nel browser e oscurato come nell'app;</li>
+    <li>le buste salvate restano <strong>solo nel browser che usi</strong>; se cancelli i dati del sito o cambi browser, non le ritrovi;</li>
+    <li>il codice casuale per il conteggio dell'analisi gratuita è salvato nel browser (punto 2.6);</li>
+    <li>un cookie tecnico ricorda che hai letto l'avviso iniziale;</li>
+    <li>se attivi Premium, la chiave si verifica sul server del marketplace, che apre una <strong>sessione</strong> legata al browser con un cookie tecnico (<code>httpOnly</code>). Il server conserva l'impronta del codice di sessione, l'impronta della chiave, l'app, il piano, la scadenza e l'email contenuta nella chiave; massimo <strong>2 sessioni</strong> per chiave; le sessioni si cancellano 30 giorni dopo la scadenza della licenza.</li>
+  </ul>
+  <p>I dettagli sui cookie del sito sono nell'<a href="https://marketplace-apps.com/it/privacy">informativa di marketplace-apps.com</a>.</p>
+
+  <h3>2.12 Permessi Android</h3>
+  <ul>
+    <li><strong>Internet</strong>: per l'analisi, l'attivazione di Premium e gli aggiornamenti.</li>
+    <li><strong>Installazione degli aggiornamenti</strong>: per proporti l'installazione della nuova versione scaricata; Android ti chiede sempre conferma.</li>
+  </ul>
+  <p>L'app non chiede i permessi di fotocamera, posizione, rubrica, microfono o messaggi.</p>
+
+  <h3>2.13 Cosa l'app NON fa</h3>
+  <ul>
+    <li>non invia il PDF o la foto della busta a nessun server;</li>
+    <li>non conserva sui server il testo delle buste né il risultato delle analisi;</li>
+    <li>non raccoglie statistiche di utilizzo, non usa strumenti di analisi o pubblicità;</li>
+    <li>non crea profili e non prende decisioni automatiche che ti riguardano;</li>
+    <li>non si collega al tuo datore di lavoro, all'INPS, all'Agenzia delle Entrate o ai tuoi conti.</li>
+  </ul>
+
+  <h2>3. Base giuridica e finalità</h2>
+  <div class="tab">
+  <table>
+    <tr><th>Finalità</th><th>Dati</th><th>Base giuridica</th></tr>
+    <tr><td>Analisi della busta con l'intelligenza artificiale</td><td>Testo oscurato della busta, che può contenere dati particolari; impronta del telefono e, con Premium, token di attivazione</td><td><strong>Consenso esplicito</strong> (art. 9, par. 2, lett. a, e art. 6, par. 1, lett. a, GDPR), revocabile in ogni momento</td></tr>
+    <tr><td>Conteggio delle analisi (1 al mese gratis, fino a 30 con Premium)</td><td>Impronta del telefono, mese, numero di analisi</td><td>Legittimo interesse (art. 6, par. 1, lett. f) a prevenire abusi del piano gratuito e del limite mensile. Usiamo solo un'impronta, il mese e un numero, cancellati dopo 30 giorni: riteniamo che non prevalgano sui tuoi diritti. Puoi opporti (punto 6)</td></tr>
+    <tr><td>Vendita della chiave e invio via email dopo il pagamento</td><td>Email, dati della transazione</td><td>Contratto (art. 6, par. 1, lett. b) e obblighi fiscali (art. 6, par. 1, lett. c)</td></tr>
+    <tr><td>Attivazione di Premium (massimo 2 telefoni o 2 sessioni web per chiave)</td><td>Hash della chiave, impronta, piano, date</td><td>Contratto di licenza (art. 6, par. 1, lett. b)</td></tr>
+    <tr><td>Prevenzione degli abusi delle licenze (una prova per telefono, un cambio di telefono ogni 30 giorni, chiavi bloccate)</td><td>Solo hash e date</td><td>Legittimo interesse (art. 6, par. 1, lett. f) a prevenire usi fraudolenti; puoi opporti (punto 6)</td></tr>
+    <tr><td>Aggiornamenti e sicurezza dell'app</td><td>Indirizzo IP, versione dell'app</td><td>Legittimo interesse (art. 6, par. 1, lett. f)</td></tr>
+  </table>
+  </div>
+  <p>Le buste salvate sul telefono le tratti tu, sul tuo dispositivo: noi non le riceviamo. Non usiamo i tuoi dati per marketing o profilazione.</p>
+
+  <h2>4. Per quanto tempo restano</h2>
+  <ul>
+    <li><strong>PDF e foto</strong>: non lasciano il telefono; la copia temporanea della foto si cancella subito dopo la lettura del testo.</li>
+    <li><strong>Testo inviato per l'analisi e risultato</strong>: non conservati, né da noi né da Cloudflare; servono solo per la risposta.</li>
+    <li><strong>Conteggio delle analisi</strong> (impronta, mese, numero): fino a 30 giorni dopo la fine del mese a cui si riferisce.</li>
+    <li><strong>Token di attivazione inviato con l'analisi</strong>: non conservato; serve solo a verificare il piano.</li>
+    <li><strong>Registri tecnici dei fornitori</strong> (IP, orario, esito, senza testo): per i tempi brevi previsti dai fornitori.</li>
+    <li><strong>Attivazioni sul server delle licenze</strong>: finché la licenza è in uso; si cancellano subito con «Disattiva su questo telefono», o comunque dopo 90 giorni senza rinnovo. Prove: 12 mesi. Data dell'ultimo cambio di telefono: 60 giorni. Hash delle chiavi bloccate: finché servono.</li>
+    <li><strong>Dati di acquisto</strong>: 10 anni, per obblighi fiscali.</li>
+    <li><strong>Buste salvate sul telefono o nel browser</strong>: finché non le cancelli o disinstalli l'app.</li>
+  </ul>
+
+  <h2>5. Destinatari e trasferimenti</h2>
+  <p>Ci serviamo di questi fornitori, che trattano i dati per nostro conto (responsabili del trattamento, art. 28 GDPR), salvo dove indicato:</p>
+  <ul>
+    <li><strong>Cloudflare</strong> (Stati Uniti): intelligenza artificiale che analizza il testo oscurato (Workers AI), server delle licenze (Workers), database delle attivazioni e dei conteggi (D1), file degli aggiornamenti (R2);</li>
+    <li><strong>Vercel</strong> (Stati Uniti): hosting di marketplace-apps.com e della versione web, compreso il passaggio del testo verso l'intelligenza artificiale;</li>
+    <li><strong>Supabase</strong> (database nell'Unione europea, Irlanda): sessioni Premium della versione web;</li>
+    <li><strong>Resend</strong> (Stati Uniti): invio dell'email con la chiave;</li>
+    <li><strong>Google</strong> (Stati Uniti): dati tecnici di diagnostica di ML Kit, solo se carichi una foto (punto 2.1);</li>
+    <li><strong>PayPal (Europe) S.à r.l. et Cie, S.C.A.</strong> (Lussemburgo): pagamento, come titolare autonomo.</li>
+  </ul>
+  <p>
+    Alcuni fornitori hanno sede negli Stati Uniti o usano infrastrutture in più paesi, quindi i dati possono essere trattati fuori dall'Unione europea. Il trasferimento si basa sulla decisione di adeguatezza della Commissione europea per le aziende aderenti all'EU-U.S. Data Privacy Framework (decisione di esecuzione (UE) 2023/1795, art. 45 GDPR) oppure sulle clausole contrattuali tipo approvate dalla Commissione (art. 46 GDPR), secondo quanto indicato da ciascun fornitore.
+  </p>
+  <p>Non vendiamo né cediamo i tuoi dati a nessuno.</p>
+
+  <h2>6. I tuoi diritti</h2>
+  <p>Il GDPR ti riconosce il diritto di accedere ai tuoi dati, correggerli, cancellarli, limitarne il trattamento, opporti, riceverli in un formato leggibile e ritirare il consenso.</p>
+  <div class="tab">
+  <table>
+    <tr><th>Diritto</th><th>Come</th></tr>
+    <tr><td>Accesso e rettifica (artt. 15 e 16)</td><td>Le buste salvate sono tutte visibili nell'archivio dell'app. Per i dati della licenza (per esempio l'email) scrivici.</td></tr>
+    <tr><td>Cancellazione (art. 17)</td><td>Elimina una busta dall'archivio, o disinstalla l'app per cancellare tutto. Per la licenza usa «Disattiva su questo telefono» o scrivici.</td></tr>
+    <tr><td>Revoca del consenso (art. 7, par. 3)</td><td>Dalle Impostazioni, in qualsiasi momento.</td></tr>
+    <tr><td>Limitazione e opposizione (artt. 18 e 21)</td><td>Scrivici per i trattamenti basati sul legittimo interesse.</td></tr>
+    <tr><td>Portabilità (art. 20)</td><td>Con Premium puoi esportare il riepilogo in PDF; per i dati della licenza scrivici.</td></tr>
+    <tr><td>Reclamo</td><td>Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>) o l'autorità del paese in cui risiedi.</td></tr>
+  </table>
+  </div>
+  <p>Il testo delle buste non resta sui nostri server: non possiamo quindi mostrartelo né cancellarlo, perché non lo abbiamo.</p>
+
+  <h2>7. Sicurezza</h2>
+  <p>
+    Tutte le comunicazioni avvengono in HTTPS. I dati sono salvati nella memoria privata dell'app, che Android isola dalle altre app; sui telefoni moderni con blocco schermo attivo questa memoria è cifrata dal sistema. Ti consigliamo di tenere attivo il blocco schermo e aggiornato il sistema operativo.
+  </p>
+
+  <h2>8. Minori</h2>
+  <p>L'app è pensata per lavoratori maggiorenni e non è destinata a minori di 18 anni.</p>
+
+  <h2>9. L'app non è consulenza del lavoro né fiscale</h2>
+  <div class="attenzione">
+    <p style="margin-top:0">BustaChiara è uno strumento informativo: spiega le voci della busta paga e controlla che i conti tornino con i numeri scritti sul documento. Non è consulenza del lavoro né fiscale e non sostituisce il consulente del lavoro.</p>
+    <p>L'app non dice se una busta è giusta o sbagliata, non calcola quanto ti spetta e non ricalcola tasse o contributi. Se un conto non torna, chiedi spiegazioni all'ufficio paghe, al sindacato, a un patronato o a un consulente del lavoro.</p>
+    <p style="margin-bottom:0">I valori di legge citati nel glossario (aliquote, soglie) sono indicati con la fonte e possono cambiare: vale sempre la norma in vigore.</p>
+  </div>
+
+  <h2>10. Distribuzione e pagamento</h2>
+  <p>
+    BustaChiara è distribuita solo tramite <a href="https://marketplace-apps.com">marketplace-apps.com</a>, non tramite Google Play; l'APK è firmato digitalmente. Android può mostrare un avviso durante l'installazione: è normale per le app installate fuori dal Play Store.
+  </p>
+  <p>
+    Premium si acquista sul sito con un pagamento una tantum (30 giorni o 1 anno), senza rinnovo automatico. Quando tocchi "Vai al pagamento" si apre il browser su una pagina di PayPal: i dati di pagamento li dai a PayPal, non a noi, e <strong>non vediamo mai i dati della tua carta o del tuo conto</strong> (<a href="https://www.paypal.com/privacy">informativa di PayPal</a>). Dopo il pagamento ricevi via email la chiave. Usiamo l'email solo per inviarti la chiave e per l'assistenza.
+  </p>
+
+  <h2>11. Modifiche a questa informativa</h2>
+  <p>Se cambieremo l'informativa in modo sostanziale, per esempio inviando altri dati o usando un altro fornitore di intelligenza artificiale, te lo mostreremo all'apertura dell'app e, se serve, ti chiederemo di nuovo il consenso. La data in cima indica l'ultimo aggiornamento.</p>
+
+  <h2>12. Contatti</h2>
+  <p><a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a></p>
+  <p>Rispondiamo entro un mese, come previsto dall'art. 12 GDPR.</p>
+
+  <footer>© 2026 Hubert Montero — BustaChiara</footer>
+
+</div>
+</body>
+</html>
